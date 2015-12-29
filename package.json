@@ -7,8 +7,7 @@
     "type": "git",
     "url": "git://github.com/Georgette/fastlane-produce.git"
   },
-  "keywords": [
-  ],
+  "keywords": [],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Georgette/fastlane-produce/issues"
@@ -19,13 +18,14 @@
     "email": "gege@pincin.com",
     "url": "http://gege.pincin.com/"
   },
-  "contributors": [
-  ],
+  "contributors": [],
   "devDependencies": {
     "@jasonpincin/standard": "~5.0.0-8",
     "faucet": "0.0.1",
     "istanbul": "~0.4.0",
     "opn": "~1.0.2",
+    "proxyquire": "^1.7.3",
+    "sinon": "^1.17.2",
     "snazzy": "~2.0.1",
     "tape": "~4.2.1"
   },
