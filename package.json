@@ -7,7 +7,7 @@
     "type": "git",
     "url": "git://github.com/Georgette/fastlane-produce.git"
   },
-  "keywords": [],
+  "keywords": ["ios", "fastlane","produce", "wrapper"],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Georgette/fastlane-produce/issues"
@@ -28,6 +28,10 @@
     "sinon": "^1.17.2",
     "snazzy": "~2.0.1",
     "tape": "~4.2.1"
+  },
+  "engineStrict" : true,
+  "engines": {
+      "node": ">=4.0"
   },
   "scripts": {
     "test": "npm run -s faucet && npm run -s lint && npm run -s check-cover",
