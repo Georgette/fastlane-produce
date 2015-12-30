@@ -27,7 +27,6 @@ function produce (options, cb) {
     if (options.teamId)         cmd += ` -b ${options.teamId}`
     if (options.teamName)       cmd += ` -l ${options.teamName}`
 
-
     if (options.createAppGroup && options.createAppGroup.name) {
         cmd += ` group -g ${options.createAppGroup.name}`
         if (options.createAppGroup.description) cmd += ` -n '${options.createAppGroup.description}'`
