@@ -1,13 +1,18 @@
 {
   "name": "fastlane-produce",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "desc",
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/Georgette/fastlane-produce.git"
   },
-  "keywords": ["ios", "fastlane","produce", "wrapper"],
+  "keywords": [
+    "ios",
+    "fastlane",
+    "produce",
+    "wrapper"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Georgette/fastlane-produce/issues"
@@ -29,9 +34,9 @@
     "snazzy": "~2.0.1",
     "tape": "~4.2.1"
   },
-  "engineStrict" : true,
+  "engineStrict": true,
   "engines": {
-      "node": ">=4.0"
+    "node": ">=4.0"
   },
   "scripts": {
     "test": "npm run -s faucet && npm run -s lint && npm run -s check-cover",
