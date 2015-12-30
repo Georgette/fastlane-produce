@@ -13,19 +13,20 @@ function produce (options, cb) {
     options.timeout = options.timeout !== undefined ? options.timeout : 0
 
     var cmd = 'produce'
-    if (options.create)     cmd += ' create'
-    if (options.identifier) cmd += ` -a ${options.identifier}`
-    if (options.user)       cmd += ` -u ${options.user}`
-    if (options.suffix)     cmd += ` -e ${options.suffix}`
-    if (options.name)       cmd += ` -q ${options.name}`
-    if (options.version)    cmd += ` -z ${options.version}`
-    if (options.sku)        cmd += ` -y ${options.sku}`
-    if (options.language)   cmd += ` -m ${options.language}`
-    if (options.company)    cmd += ` -c ${options.company}`
-    if (options.teamId)     cmd += ` -b ${options.teamId}`
-    if (options.teamName)   cmd += ` -l ${options.teamName}`
-    if (options.skipItc)    cmd += ' -i'
-    if (options.devCenter)  cmd += ' -d'
+    if (options.create)         cmd += ' create'
+    if (options.skipItc)        cmd += ' -i'
+    if (options.skipDevCenter)  cmd += ' -d'
+    if (options.user)           cmd += ` -u ${options.user}`
+    if (options.identifier)     cmd += ` -a ${options.identifier}`
+    if (options.suffix)         cmd += ` -e ${options.suffix}`
+    if (options.name)           cmd += ` -q ${options.name}`
+    if (options.version)        cmd += ` -z ${options.version}`
+    if (options.sku)            cmd += ` -y ${options.sku}`
+    if (options.language)       cmd += ` -m ${options.language}`
+    if (options.company)        cmd += ` -c ${options.company}`
+    if (options.teamId)         cmd += ` -b ${options.teamId}`
+    if (options.teamName)       cmd += ` -l ${options.teamName}`
+
 
     if (options.createAppGroup && options.createAppGroup.name) {
         cmd += ` group -g ${options.createAppGroup.name}`

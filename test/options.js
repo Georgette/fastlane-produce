@@ -31,7 +31,7 @@ test('accepts create command', (t) => {
 test('accepts option to turn off devCenter creation', (t) => {
     t.plan(1)
     exec.reset()
-    produce({ devCenter: true }, () => {
+    produce({ skipDevCenter: true }, () => {
         t.ok(exec.calledWith('produce -d'), 'produce called with -d')
     })
 })
