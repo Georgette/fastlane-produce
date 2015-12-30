@@ -66,7 +66,7 @@ Accepts a required options object, with the available options listed below. Opti
 Note: Both enableServices and disableServices can be an array of strings, array of objects (with required key of service, optional key of value), or mixed.
 
 |Option | Example | Command Executed |
-|-------|---------------------|
+|-------|----------|-----------|
 |enableServices (array of strings or object with required service key) | { enableServices:['app-group', { service:'icloud', value:'legacy'}] } | enable_services --app-group --icloud 'legacy'|
 
 ### Specific Application Services that can be disabled for an app on the Apple Developer Portal
@@ -93,7 +93,7 @@ Note: Both enableServices and disableServices can be an array of strings, array 
 ```
 
 |Option | Example | Command Executed |
-|-------|---------------------------|
+|-------|---------|-----------------|
 |disableServices (array of strings or object with required service key) | { disableServices:['app-group', { service:'icloud'}, 'data-protection'] }|  disable_services --app-group --icloud --data-protection|
 
 ### Specific Application Services that can be disabled for an app on the Apple Developer Portal
