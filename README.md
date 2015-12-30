@@ -65,11 +65,11 @@ Accepts a required options object, with the available options listed below. Opti
 
 Note: Both enableServices and disableServices can be an array of strings, array of objects (with required key of service, optional key of value), or mixed.
 
-option | enableServices (array of strings or object with required service key)
--|-
-example | { enableServices:['app-group', { service:'icloud', value:'legacy'}] }
-command executed | enable_services --app-group --icloud 'legacy'
-Description | Enable specific Application Services for a specific app on the Apple Developer Portal
+|option | enableServices (array of strings or object with required service key)|
+|-----|-----|
+|example | { enableServices:['app-group', { service:'icloud', value:'legacy'}] }|
+|command executed | enable_services --app-group --icloud 'legacy'|
+|Description | Enable specific Application Services for a specific app on the Apple Developer Portal|
 ```
 
 
@@ -91,11 +91,11 @@ Description | Enable specific Application Services for a specific app on the App
 
 ```
 
-option | disableServices (array of strings or object with required service key)
--|-
-example | { disableServices:['app-group', { service:'icloud' }, 'data-protection'] }
-command executed | disable_services --app-group --icloud --data-protection
-Description | disable specific Application Services for a specific app on the Apple Developer Portal
+|option | disableServices (array of strings or object with required service key)|
+|-----|-------|
+|example | { disableServices:['app-group', { service:'icloud' }, 'data-protection'] }|
+|command executed | disable_services --app-group --icloud --data-protection|
+|Description | disable specific Application Services for a specific app on the Apple Developer Portal|
 
 ```
     --app-group          Disable App Groups
