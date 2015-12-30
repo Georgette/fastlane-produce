@@ -61,15 +61,15 @@ Accepts a required options object, with the available options listed below. Opti
 
 
 
-### Enabling and Disabling Services
+### Enabling and Disabling Application Services for a specific app on the Apple Developer Portal
 
 Note: Both enableServices and disableServices can be an array of strings, array of objects (with required key of service, optional key of value), or mixed.
 
-|Option | Example | Description | Command Executed |
-|-------|---------|-------------|------------------|
-|enableServices (array of strings or object with required service key) | { enableServices:['app-group', { service:'icloud', value:'legacy'}] } | Enable specific Application Services for a specific app on the Apple Developer Portal| enable_services --app-group --icloud 'legacy'|
+|Option | Example | Command Executed |
+|-------|---------------------|
+|enableServices (array of strings or object with required service key) | { enableServices:['app-group', { service:'icloud', value:'legacy'}] } | enable_services --app-group --icloud 'legacy'|
 
-### Services that can be enabled
+### Specific Application Services that can be disabled for an app on the Apple Developer Portal
 
 ```
 
@@ -92,11 +92,11 @@ Note: Both enableServices and disableServices can be an array of strings, array 
 
 ```
 
-|Option | Example | Description | Command Executed |
-|-------|---------|-------------|------------------|
-|disableServices (array of strings or object with required service key) | { disableServices:['app-group', { service:'icloud'}, 'data-protection'] }| Disable specific Application Services for a specific app on the Apple Developer Portal| disable_services --app-group --icloud --data-protection|
+|Option | Example | Command Executed |
+|-------|---------------------------|
+|disableServices (array of strings or object with required service key) | { disableServices:['app-group', { service:'icloud'}, 'data-protection'] }|  disable_services --app-group --icloud --data-protection|
 
-### Services that can be disabled
+### Specific Application Services that can be disabled for an app on the Apple Developer Portal
 
 ```
     app-group          Disable App Groups
