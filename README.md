@@ -84,7 +84,7 @@ Note: Both enableServices and disableServices can be an array of strings, array 
     push-notification  Enable Push notification (only enables the service, does not configure certificates)
     vpn-conf           Enable VPN Configuration
     icloud STRING      Enable iCloud, DEFAULTS TO CLOUDKIT but acceptable values are "legacy" or "cloudkit"
-    data-protection    Enable Data Protection, DEFAULTS TO "complete" but acceptable values are "complete", "unlessopen" and "untilfirstauth"
+    data-protection    Enable Data Protection, DEFAULTS TO COMPLETE but acceptable values are "complete", "unlessopen" and "untilfirstauth"
 
     if icloud or data-protection is passed as string, it will set defaults. To override default properties,
     pass an object with service and value. { service:'icloud', value: 'legacy'}
