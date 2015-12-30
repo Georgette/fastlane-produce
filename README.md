@@ -55,7 +55,7 @@ Accepts a required options object, with the available options listed below. Opti
 | version (string) | { version:'1.0' } | Initial version number | -z { version } |
 | sku (string)    | { sku:'23423' } | SKU Number |  -y { sku } |
 | language (string)   | { language:'french' } | Primary Language (e.g. 'English', 'German') |  -m { language } |
-| company (string)    | { company:'ABC' } | The name of your company. Only required if it's the first app you create |  -m { language } |
+| company (string)    | { company:'ABC' } | The name of your company. Only required if it's the first app you create |  -c { company } |
 | createAppGroup (object) | { createAppGroup :{name:'app group name', description: 'app group description' }} | Create a New App Group | group -g { name } -n { description } |
 | associateGroup (object) | { associateGroup: { app:'app identifier', group:'group id'} } |Associate with a group, which is create if needed or simply located otherwise | associate_group -a { app } { group } |
 
